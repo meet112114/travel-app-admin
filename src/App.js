@@ -1,5 +1,6 @@
 import  { useState } from "react";
 import { useForm } from "react-hook-form";
+import "./app.css";
 
 
 function App() {  
@@ -40,34 +41,41 @@ function App() {
 
 
   return (
-    <>
+            <div className="container">
               <form onSubmit={handleSubmit(onSubmit)} method="POST" className="register-form" id="register-form">                            
                             <div className="form-group">
-                                <input  {...register("title")} type="text"   placeholder="title"     />
+                            <label htmlFor="title">Title :</label>
+                                <input  {...register("title")} type="text"   placeholder="title"/>
                             </div>
-                            <div className="form-group">                               
-                                <input  {...register("category")} type="text"   placeholder="category"   />
+                            <div className="form-group">
+                            <label htmlFor="title">Category : </label>                               
+                                <input  {...register("category")} type="text"   placeholder="category"/>
                             </div>
-                            <div className="form-group">                               
-                                <input  {...register("description")} type="text" placeholder="description "   />
+                            <div className="form-group">
+                            <label htmlFor="title">Description : </label>                               
+                                <input  {...register("description")} type="text" placeholder="description "/>
                             </div>
-                            <div className="form-group">                               
-                                <input  {...register("rating")} type="number"   placeholder="Raing(1-10)"   />
+                            <div className="form-group">
+                            <label htmlFor="title">Rating : </label>                               
+                                <input  {...register("rating")} type="number"   placeholder="Raing(1-10)"/>
                             </div>                           
-                            <div className="form-group">                               
+                            <div className="form-group">
+                            <label htmlFor="title">Location Url : </label>                               
                                 <input  {...register("location")} type="text"   placeholder="location"    />
                             </div> 
-                            <div className="form-group">                               
-                                <input  {...register("image")} type="text"  placeholder="main img url"   />
+                            <div className="form-group">
+                            <label htmlFor="title">Image Url : </label>                               
+                                <input  {...register("image")} type="text"  placeholder="main img "   />
                             </div>   
-                            <div className="form-group">                               
-                                <input  {...register("images")} type="text"   placeholder="Imgs url"   />
+                            <div className="form-group">
+                            <label htmlFor="title">Images Url : </label>                               
+                                <input  {...register("images")} type="text"   placeholder="Imgs ( url1 , url2 , url3.. )"   />
                             </div>                                                        
                             <div className="form-group form-button">
                                 <input type="submit" id="signup" className="form-submit" />
                             </div>
                         </form>                    
-                      </>
+                      </div>
   );
 }
 export default App;

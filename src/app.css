@@ -1,0 +1,79 @@
+/* app.css */
+/* app.css */
+.container {
+    margin-top: 100px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-right: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add flex style for form-group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  /* Add flex style for label */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Adjust width of labels */
+  label {
+    flex-basis: 20%;
+    max-width: 20%;
+    padding-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 9    0%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-button {
+    align-self: center;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .form-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional styles for responsiveness */
+  @media screen and (max-width: 480px) {
+    .container {
+      max-width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    input[type="text"],
+    input[type="number"] {
+      padding: 8px;
+    }
+  }
